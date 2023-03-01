@@ -137,7 +137,7 @@ Partial Class frmPayroll
         '
         Me.lblFICAIndicator.AutoSize = True
         Me.lblFICAIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFICAIndicator.Location = New System.Drawing.Point(98, 325)
+        Me.lblFICAIndicator.Location = New System.Drawing.Point(69, 325)
         Me.lblFICAIndicator.Name = "lblFICAIndicator"
         Me.lblFICAIndicator.Size = New System.Drawing.Size(69, 25)
         Me.lblFICAIndicator.TabIndex = 9
@@ -147,7 +147,7 @@ Partial Class frmPayroll
         '
         Me.lblFICATax.AutoSize = True
         Me.lblFICATax.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFICATax.Location = New System.Drawing.Point(173, 325)
+        Me.lblFICATax.Location = New System.Drawing.Point(144, 325)
         Me.lblFICATax.Name = "lblFICATax"
         Me.lblFICATax.Size = New System.Drawing.Size(66, 25)
         Me.lblFICATax.TabIndex = 10
@@ -157,7 +157,7 @@ Partial Class frmPayroll
         '
         Me.lblFederalIndicator.AutoSize = True
         Me.lblFederalIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFederalIndicator.Location = New System.Drawing.Point(287, 325)
+        Me.lblFederalIndicator.Location = New System.Drawing.Point(259, 325)
         Me.lblFederalIndicator.Name = "lblFederalIndicator"
         Me.lblFederalIndicator.Size = New System.Drawing.Size(135, 25)
         Me.lblFederalIndicator.TabIndex = 11
@@ -167,7 +167,7 @@ Partial Class frmPayroll
         '
         Me.lblFederalTax.AutoSize = True
         Me.lblFederalTax.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFederalTax.Location = New System.Drawing.Point(427, 325)
+        Me.lblFederalTax.Location = New System.Drawing.Point(410, 325)
         Me.lblFederalTax.Name = "lblFederalTax"
         Me.lblFederalTax.Size = New System.Drawing.Size(66, 25)
         Me.lblFederalTax.TabIndex = 12
