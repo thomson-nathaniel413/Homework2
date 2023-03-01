@@ -37,7 +37,11 @@ Public Class frmPayroll
 
         ' get gross pay and convert to decimal
         strIncome = txtGrossPay.Text
-        decIncome = Convert.ToInt32(strIncome)
+        If IsNumeric(txtGrossPay.Text) Then
+            decIncome = Convert.ToInt32(strIncome)
+        Else
+            decIncome = 0D
+        End If
 
         ' perform tax calculations
         decFica = decIncome * cdecFica
