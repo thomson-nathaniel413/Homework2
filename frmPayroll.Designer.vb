@@ -22,6 +22,7 @@ Partial Class frmPayroll
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPayroll))
         Me.picPayroll = New System.Windows.Forms.PictureBox()
         Me.lblPayroll = New System.Windows.Forms.Label()
         Me.lblPaycheck = New System.Windows.Forms.Label()
@@ -44,151 +45,171 @@ Partial Class frmPayroll
         '
         'picPayroll
         '
+        Me.picPayroll.Image = CType(resources.GetObject("picPayroll.Image"), System.Drawing.Image)
         Me.picPayroll.Location = New System.Drawing.Point(1, 0)
         Me.picPayroll.Name = "picPayroll"
-        Me.picPayroll.Size = New System.Drawing.Size(347, 190)
+        Me.picPayroll.Size = New System.Drawing.Size(347, 216)
+        Me.picPayroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPayroll.TabIndex = 0
         Me.picPayroll.TabStop = False
         '
         'lblPayroll
         '
         Me.lblPayroll.AutoSize = True
-        Me.lblPayroll.Location = New System.Drawing.Point(479, 39)
+        Me.lblPayroll.Font = New System.Drawing.Font("Cooper Black", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPayroll.Location = New System.Drawing.Point(409, 20)
         Me.lblPayroll.Name = "lblPayroll"
-        Me.lblPayroll.Size = New System.Drawing.Size(130, 20)
+        Me.lblPayroll.Size = New System.Drawing.Size(312, 36)
         Me.lblPayroll.TabIndex = 1
         Me.lblPayroll.Text = "Payroll Calculator"
         '
         'lblPaycheck
         '
         Me.lblPaycheck.AutoSize = True
-        Me.lblPaycheck.Location = New System.Drawing.Point(504, 77)
+        Me.lblPaycheck.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPaycheck.Location = New System.Drawing.Point(487, 92)
         Me.lblPaycheck.Name = "lblPaycheck"
-        Me.lblPaycheck.Size = New System.Drawing.Size(77, 20)
+        Me.lblPaycheck.Size = New System.Drawing.Size(130, 27)
         Me.lblPaycheck.TabIndex = 2
         Me.lblPaycheck.Text = "Paycheck"
         '
         'lblCalculator
         '
         Me.lblCalculator.AutoSize = True
-        Me.lblCalculator.Location = New System.Drawing.Point(504, 121)
+        Me.lblCalculator.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCalculator.Location = New System.Drawing.Point(478, 138)
         Me.lblCalculator.Name = "lblCalculator"
-        Me.lblCalculator.Size = New System.Drawing.Size(87, 20)
+        Me.lblCalculator.Size = New System.Drawing.Size(154, 27)
         Me.lblCalculator.TabIndex = 3
         Me.lblCalculator.Text = "Calculation"
         '
         'lblGrossPayIndicator
         '
         Me.lblGrossPayIndicator.AutoSize = True
-        Me.lblGrossPayIndicator.Location = New System.Drawing.Point(235, 225)
+        Me.lblGrossPayIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGrossPayIndicator.Location = New System.Drawing.Point(214, 223)
         Me.lblGrossPayIndicator.Name = "lblGrossPayIndicator"
-        Me.lblGrossPayIndicator.Size = New System.Drawing.Size(129, 20)
+        Me.lblGrossPayIndicator.Size = New System.Drawing.Size(208, 29)
         Me.lblGrossPayIndicator.TabIndex = 4
         Me.lblGrossPayIndicator.Text = "Enter Gross Pay:"
         '
         'txtGrossPay
         '
-        Me.txtGrossPay.Location = New System.Drawing.Point(415, 222)
+        Me.txtGrossPay.Location = New System.Drawing.Point(432, 227)
         Me.txtGrossPay.Name = "txtGrossPay"
         Me.txtGrossPay.Size = New System.Drawing.Size(100, 26)
         Me.txtGrossPay.TabIndex = 5
         '
         'btnCompute
         '
+        Me.btnCompute.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnCompute.ForeColor = System.Drawing.SystemColors.Window
         Me.btnCompute.Location = New System.Drawing.Point(128, 268)
         Me.btnCompute.Name = "btnCompute"
         Me.btnCompute.Size = New System.Drawing.Size(150, 36)
         Me.btnCompute.TabIndex = 6
         Me.btnCompute.Text = "Compute Taxes"
-        Me.btnCompute.UseVisualStyleBackColor = True
+        Me.btnCompute.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnClear.ForeColor = System.Drawing.SystemColors.Window
         Me.btnClear.Location = New System.Drawing.Point(325, 268)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(150, 36)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnExit.ForeColor = System.Drawing.SystemColors.Window
         Me.btnExit.Location = New System.Drawing.Point(523, 268)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(150, 36)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'lblFICAIndicator
         '
         Me.lblFICAIndicator.AutoSize = True
-        Me.lblFICAIndicator.Location = New System.Drawing.Point(124, 325)
+        Me.lblFICAIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFICAIndicator.Location = New System.Drawing.Point(98, 325)
         Me.lblFICAIndicator.Name = "lblFICAIndicator"
-        Me.lblFICAIndicator.Size = New System.Drawing.Size(50, 20)
+        Me.lblFICAIndicator.Size = New System.Drawing.Size(69, 25)
         Me.lblFICAIndicator.TabIndex = 9
         Me.lblFICAIndicator.Text = "FICA:"
         '
         'lblFICATax
         '
         Me.lblFICATax.AutoSize = True
-        Me.lblFICATax.Location = New System.Drawing.Point(229, 325)
+        Me.lblFICATax.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFICATax.Location = New System.Drawing.Point(173, 325)
         Me.lblFICATax.Name = "lblFICATax"
-        Me.lblFICATax.Size = New System.Drawing.Size(49, 20)
+        Me.lblFICATax.Size = New System.Drawing.Size(66, 25)
         Me.lblFICATax.TabIndex = 10
         Me.lblFICATax.Text = "$0.00"
         '
         'lblFederalIndicator
         '
         Me.lblFederalIndicator.AutoSize = True
-        Me.lblFederalIndicator.Location = New System.Drawing.Point(311, 325)
+        Me.lblFederalIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFederalIndicator.Location = New System.Drawing.Point(287, 325)
         Me.lblFederalIndicator.Name = "lblFederalIndicator"
-        Me.lblFederalIndicator.Size = New System.Drawing.Size(96, 20)
+        Me.lblFederalIndicator.Size = New System.Drawing.Size(135, 25)
         Me.lblFederalIndicator.TabIndex = 11
         Me.lblFederalIndicator.Text = "Federal Tax:"
         '
         'lblFederalTax
         '
         Me.lblFederalTax.AutoSize = True
-        Me.lblFederalTax.Location = New System.Drawing.Point(426, 325)
+        Me.lblFederalTax.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFederalTax.Location = New System.Drawing.Point(427, 325)
         Me.lblFederalTax.Name = "lblFederalTax"
-        Me.lblFederalTax.Size = New System.Drawing.Size(49, 20)
+        Me.lblFederalTax.Size = New System.Drawing.Size(66, 25)
         Me.lblFederalTax.TabIndex = 12
         Me.lblFederalTax.Text = "$0.00"
         '
         'lblStateIndicator
         '
         Me.lblStateIndicator.AutoSize = True
-        Me.lblStateIndicator.Location = New System.Drawing.Point(510, 325)
+        Me.lblStateIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStateIndicator.Location = New System.Drawing.Point(519, 325)
         Me.lblStateIndicator.Name = "lblStateIndicator"
-        Me.lblStateIndicator.Size = New System.Drawing.Size(81, 20)
+        Me.lblStateIndicator.Size = New System.Drawing.Size(113, 25)
         Me.lblStateIndicator.TabIndex = 13
         Me.lblStateIndicator.Text = "State Tax:"
         '
         'lblStateTax
         '
         Me.lblStateTax.AutoSize = True
-        Me.lblStateTax.Location = New System.Drawing.Point(624, 325)
+        Me.lblStateTax.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStateTax.Location = New System.Drawing.Point(638, 325)
         Me.lblStateTax.Name = "lblStateTax"
-        Me.lblStateTax.Size = New System.Drawing.Size(49, 20)
+        Me.lblStateTax.Size = New System.Drawing.Size(66, 25)
         Me.lblStateTax.TabIndex = 14
         Me.lblStateTax.Text = "$0.00"
         '
         'lblNetPayIndicator
         '
         Me.lblNetPayIndicator.AutoSize = True
-        Me.lblNetPayIndicator.Location = New System.Drawing.Point(255, 379)
+        Me.lblNetPayIndicator.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetPayIndicator.Location = New System.Drawing.Point(185, 379)
         Me.lblNetPayIndicator.Name = "lblNetPayIndicator"
-        Me.lblNetPayIndicator.Size = New System.Drawing.Size(167, 20)
+        Me.lblNetPayIndicator.Size = New System.Drawing.Size(271, 29)
         Me.lblNetPayIndicator.TabIndex = 15
         Me.lblNetPayIndicator.Text = "Net Paycheck Income:"
         '
         'lblNetPay
         '
         Me.lblNetPay.AutoSize = True
-        Me.lblNetPay.Location = New System.Drawing.Point(428, 379)
+        Me.lblNetPay.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetPay.Location = New System.Drawing.Point(478, 379)
         Me.lblNetPay.Name = "lblNetPay"
-        Me.lblNetPay.Size = New System.Drawing.Size(49, 20)
+        Me.lblNetPay.Size = New System.Drawing.Size(76, 29)
         Me.lblNetPay.TabIndex = 16
         Me.lblNetPay.Text = "$0.00"
         '
